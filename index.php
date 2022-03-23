@@ -1,11 +1,4 @@
-<?php
-include_once 'app/user_repository.php';
-$users = UserRepository::getUsers();
-//count($users) . "<br/>";
-$numUsers = UserRepository::countUsers();
-echo $numUsers."<br/>";
 
-?>
 <?php
 include 'templates/header.php';
 include 'templates/navbar-inc.php';

@@ -1,3 +1,12 @@
+<?php
+include_once 'app/user_repository.php';
+$users = UserRepository::getUsers();
+//count($users) . "<br/>";
+$numUsers = UserRepository::countUsers();
+echo $numUsers."<br/>";
+
+?>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="#">Navbar</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
