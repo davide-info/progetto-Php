@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS blog;
+USE blog;
+CREATE TABLE IF NOT EXISTS users (id INTEGER NOT NULL AUTO_INCREMENT, 
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    register_date DATETIME NOT NULL,
+    active TINYINT NOT NULL,
+     PRIMARY KEY(id)
+);
+
+
+
